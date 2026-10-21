@@ -1,0 +1,15 @@
+{
+  "name": "calduty",
+  "version": "1.0.0",
+  "description": "Calduty PayPal checkout starter",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.5.0"
+  }
+}

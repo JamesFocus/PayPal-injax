@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <title>Calduty — Store Payment</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">cal<span>duty.</span></a><span class="secure">Secure checkout</span></header>
+<main class="shell">
+  <section class="intro">
+    <div class="eyebrow">CALDUTY PAYMENTS</div>
+    <h1>Simple payments.<br><em>Clear confirmation.</em></h1>
+    <p>Enter the amount for your purchase and complete checkout through PayPal. Calduty never asks for your card number or PayPal password directly.</p>
+    <div class="trust"><span>✓</span> Payment handled by PayPal <span>·</span> Server-confirmed receipt</div>
+  </section>
+  <section class="checkout card">
+    <div class="card-heading"><div><div class="eyebrow">YOUR CHECKOUT</div><h2>Pay the store</h2></div><div class="currency" id="currency-label">USD</div></div>
+    <label for="amount">Payment amount</label>
+    <div class="amount-wrap"><span id="currency-symbol">$</span><input id="amount" inputmode="decimal" type="number" min="1" max="10000" step="0.01" value="25.00"></div>
+    <p class="help">Enter the agreed purchase total.</p>
+    <div class="summary"><span>Purchase total</span><strong id="total">$25.00 USD</strong></div>
+    <div id="paypal-button-container"></div>
+    <div id="status" class="status" role="status" aria-live="polite">Loading checkout…</div>
+    <div id="receipt" class="receipt hidden"></div>
+    <p class="fineprint">Do not close this page until payment confirmation appears. PayPal approval alone is not proof of completed payment.</p>
+  </section>
+  <section class="steps"><h2>How it works</h2>
+    <div class="step"><b>01</b><div><strong>Enter an amount</strong><p>Choose the agreed purchase total in USD.</p></div></div>
+    <div class="step"><b>02</b><div><strong>Pay with PayPal</strong><p>Sign in to PayPal, or use a debit/credit card if PayPal offers that option for your account and region.</p></div></div>
+    <div class="step"><b>03</b><div><strong>Wait for confirmation</strong><p>Calduty confirms the capture with PayPal before showing a paid receipt.</p></div></div>
+  </section>
+  <footer>© <span id="year"></span> Calduty · Payments are processed by PayPal.</footer>
+</main>
+</body>
+</html>
